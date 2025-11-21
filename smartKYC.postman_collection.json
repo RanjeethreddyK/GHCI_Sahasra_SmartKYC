@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "85942919-314f-47c4-b490-827f577a04e4",
+		"name": "smartKYC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26939266"
+	},
+	"item": [
+		{
+			"name": "Start Application",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"application_id\", response.application_id);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/start/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"start",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Application Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/{{application_id}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"{{application_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Passport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/sriharshan@backbase.com/Downloads/passport_front.jpg"
+						},
+						{
+							"key": "document_type",
+							"value": "PASSPORT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/{{application_id}}/document/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"{{application_id}}",
+						"document",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Utility Bill",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/sriharshan@backbase.com/Downloads/CTBC QR.png"
+						},
+						{
+							"key": "document_type",
+							"value": "UTILITY_BILL",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/{{application_id}}/document/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"{{application_id}}",
+						"document",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Document (Bad Example)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/sriharshan@backbase.com/Downloads/cap-linkedin.jpg"
+						},
+						{
+							"key": "document_type",
+							"value": "TAMPERED_EXAMPLE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/{{application_id}}/document/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"{{application_id}}",
+						"document",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Selfie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/sriharshan@backbase.com/Downloads/quad-linkedin.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/{{application_id}}/selfie/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"{{application_id}}",
+						"selfie",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Selfie (Bad Example)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/sriharshan@backbase.com/Downloads/Kaman Junction.jpg"
+						},
+						{
+							"key": "trigger_fail",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/{{application_id}}/selfie/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"{{application_id}}",
+						"selfie",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Perform Risk Analaysis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/applications/{{application_id}}/analyze/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"applications",
+						"{{application_id}}",
+						"analyze",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

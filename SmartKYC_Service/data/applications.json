@@ -1,0 +1,477 @@
+{
+    "4518a724-ae99-4306-8675-10088b1e9807": {
+        "application_id": "4518a724-ae99-4306-8675-10088b1e9807",
+        "status": "PENDING_DOCUMENTS",
+        "created_at": "2025-11-15T04:55:47.131454Z",
+        "updated_at": "2025-11-15T04:55:47.131454Z",
+        "risk_score": null,
+        "explanations": [],
+        "documents": {
+            "id_document": null,
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": null
+    },
+    "c2f52be8-a11d-445c-b501-0b4f6439cd68": {
+        "application_id": "c2f52be8-a11d-445c-b501-0b4f6439cd68",
+        "status": "PENDING_DOCUMENTS",
+        "created_at": "2025-11-15T05:05:36.434616Z",
+        "updated_at": "2025-11-15T05:05:36.434616Z",
+        "risk_score": null,
+        "explanations": [],
+        "documents": {
+            "id_document": null,
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": null
+    },
+    "ad099256-fd41-4971-a961-f7176501d963": {
+        "application_id": "ad099256-fd41-4971-a961-f7176501d963",
+        "status": "PENDING_DOCUMENTS",
+        "created_at": "2025-11-15T05:12:01.121858Z",
+        "updated_at": "2025-11-15T05:12:01.121858Z",
+        "risk_score": null,
+        "explanations": [],
+        "documents": {
+            "id_document": null,
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": null
+    },
+    "214a4a2e-9a8b-4524-9e87-64dc66fc2110": {
+        "application_id": "214a4a2e-9a8b-4524-9e87-64dc66fc2110",
+        "status": "PENDING_DOCUMENTS",
+        "created_at": "2025-11-15T05:27:54.285443Z",
+        "updated_at": "2025-11-15T05:27:54.285443Z",
+        "risk_score": null,
+        "explanations": [],
+        "documents": {
+            "id_document": null,
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": null
+    },
+    "9b86fd43-c027-412f-9d73-9f260ec1c6c5": {
+        "application_id": "9b86fd43-c027-412f-9d73-9f260ec1c6c5",
+        "status": "PENDING_DOCUMENTS",
+        "created_at": "2025-11-15T05:32:44.866922Z",
+        "updated_at": "2025-11-15T05:32:44.866922Z",
+        "risk_score": null,
+        "explanations": [],
+        "documents": {
+            "id_document": null,
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": null
+    },
+    "e7c30e87-b9c6-4411-b7f1-33c68d145a4a": {
+        "application_id": "e7c30e87-b9c6-4411-b7f1-33c68d145a4a",
+        "status": "PENDING_DOCUMENTS",
+        "created_at": "2025-11-15T05:33:23.523674Z",
+        "updated_at": "2025-11-15T05:33:23.523674Z",
+        "risk_score": null,
+        "explanations": [],
+        "documents": {
+            "id_document": null,
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": null
+    },
+    "386f3d5c-b70f-4391-8d6d-3f98fb9a8f4e": {
+        "application_id": "386f3d5c-b70f-4391-8d6d-3f98fb9a8f4e",
+        "status": "PENDING_DOCUMENTS",
+        "created_at": "2025-11-15T05:38:08.018924Z",
+        "updated_at": "2025-11-15T05:38:08.018924Z",
+        "risk_score": null,
+        "explanations": [],
+        "documents": {
+            "id_document": null,
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": null
+    },
+    "d1b9875c-66a2-4165-a3da-cb0706ee5ca1": {
+        "application_id": "d1b9875c-66a2-4165-a3da-cb0706ee5ca1",
+        "status": "REJECTED_ID_DOCUMENT",
+        "created_at": "2025-11-15T05:44:47.317606Z",
+        "updated_at": "2025-11-15T05:51:45.721326Z",
+        "risk_score": 13,
+        "explanations": [
+            "All automated checks passed.",
+            "Data consistent across documents.",
+            "Biometric match score is high.",
+            "id_document was rejected. Reason: Digital alteration detected in Date of Birth field."
+        ],
+        "documents": {
+            "id_document": {
+                "file_path": "uploads/d1b9875c-66a2-4165-a3da-cb0706ee5ca1/cap-linkedin.jpg",
+                "uploaded_at": "2025-11-15T05:51:45.721244Z",
+                "status": "REJECTED_TAMPERED",
+                "document_type": "TAMPERED_EXAMPLE",
+                "forensics": {
+                    "status": "TAMPERED",
+                    "confidence_score": 0.9861,
+                    "reason": "Digital alteration detected in Date of Birth field.",
+                    "checks_failed": [
+                        "pixel_analysis",
+                        "font_analysis"
+                    ]
+                },
+                "extracted_data": {
+                    "first_name": "J0HN",
+                    "last_name": "SM1TH",
+                    "document_number": "T80123456",
+                    "dob": "1985-02-15",
+                    "expiry_date": "2025-01-01",
+                    "nationality": "UKN"
+                },
+                "model_info": {
+                    "ocr_model": "mock-trocr-transformer-v1.2",
+                    "forensics_model": "mock-cnn-tamper-v2.1",
+                    "processing_time_sec": 2.12
+                }
+            },
+            "address_proof": {
+                "file_path": "uploads/d1b9875c-66a2-4165-a3da-cb0706ee5ca1/CTBC QR.png",
+                "uploaded_at": "2025-11-15T05:47:00.286841Z",
+                "status": "PROCESSED",
+                "document_type": "UTILITY_BILL",
+                "forensics": {
+                    "status": "CLEAR",
+                    "confidence_score": 0.9716,
+                    "checks_passed": [
+                        "logo_match",
+                        "address_database_crosscheck",
+                        "date_check"
+                    ]
+                },
+                "extracted_data": {
+                    "name": "JANE DOE",
+                    "address": "123 MAIN ST, ANYTOWN, USA 12345",
+                    "issue_date": "2025-10-16",
+                    "provider": "City Electric & Gas"
+                },
+                "model_info": {
+                    "ocr_model": "mock-trocr-transformer-v1.2",
+                    "forensics_model": "mock-cnn-tamper-v2.1",
+                    "processing_time_sec": 2.44
+                }
+            }
+        },
+        "selfie": {
+            "file_path": "uploads/d1b9875c-66a2-4165-a3da-cb0706ee5ca1/quad-linkedin.jpg",
+            "uploaded_at": "2025-11-15T05:48:03.457036Z",
+            "status": "CLEAR",
+            "ai_analysis": {
+                "status": "CLEAR",
+                "reason": "Biometric verification successful.",
+                "liveness_check": {
+                    "status": "REAL",
+                    "confidence": 0.9755
+                },
+                "face_match": {
+                    "status": "MATCH",
+                    "match_score": 0.9514,
+                    "id_document_face_ref": "doc_d1b9875c-66a2-4165-a3da-cb0706ee5ca1_face.jpg",
+                    "selfie_face_ref": "selfie_d1b9875c-66a2-4165-a3da-cb0706ee5ca1_face.jpg"
+                },
+                "model_info": {
+                    "face_match_model": "mock-cnn-facenet-v3.0",
+                    "liveness_model": "mock-antispoof-v1.8",
+                    "processing_time_sec": 1.14
+                }
+            }
+        },
+        "extracted_data": {
+            "first_name": "J0HN",
+            "last_name": "SM1TH",
+            "document_number": "T80123456",
+            "dob": "1985-02-15",
+            "expiry_date": "2025-01-01",
+            "nationality": "UKN",
+            "name": "JANE DOE",
+            "address": "123 MAIN ST, ANYTOWN, USA 12345",
+            "address_issue_date": "2025-10-16",
+            "address_provider": "City Electric & Gas"
+        },
+        "risk_analysis": {
+            "decision": "APPROVED",
+            "risk_score": 13,
+            "xai_explanations": [
+                "All automated checks passed.",
+                "Data consistent across documents.",
+                "Biometric match score is high."
+            ],
+            "model_info": {
+                "risk_model": "mock-xgboost-classifier-v1.4",
+                "xai_model": "mock-shap-explainer-v1.1",
+                "processing_time_sec": 1.05
+            },
+            "analyzed_at": "2025-11-15T05:49:07.991502Z"
+        }
+    },
+    "51ded2c9-d44f-4f99-acb3-ca40d05e7379": {
+        "application_id": "51ded2c9-d44f-4f99-acb3-ca40d05e7379",
+        "status": "REJECTED_ID_DOCUMENT",
+        "created_at": "2025-11-15T05:52:09.570387Z",
+        "updated_at": "2025-11-15T05:52:27.909844Z",
+        "risk_score": null,
+        "explanations": [
+            "ID document processed. Please upload proof of address.",
+            "id_document was rejected. Reason: Digital alteration detected in Date of Birth field."
+        ],
+        "documents": {
+            "id_document": {
+                "file_path": "uploads/51ded2c9-d44f-4f99-acb3-ca40d05e7379/cap-linkedin.jpg",
+                "uploaded_at": "2025-11-15T05:52:27.909700Z",
+                "status": "REJECTED_TAMPERED",
+                "document_type": "TAMPERED_EXAMPLE",
+                "forensics": {
+                    "status": "TAMPERED",
+                    "confidence_score": 0.981,
+                    "reason": "Digital alteration detected in Date of Birth field.",
+                    "checks_failed": [
+                        "pixel_analysis",
+                        "font_analysis"
+                    ]
+                },
+                "extracted_data": {
+                    "first_name": "J0HN",
+                    "last_name": "SM1TH",
+                    "document_number": "T80123456",
+                    "dob": "1985-02-15",
+                    "expiry_date": "2025-01-01",
+                    "nationality": "UKN"
+                },
+                "model_info": {
+                    "ocr_model": "mock-trocr-transformer-v1.2",
+                    "forensics_model": "mock-cnn-tamper-v2.1",
+                    "processing_time_sec": 1.52
+                }
+            },
+            "address_proof": null
+        },
+        "selfie": null,
+        "extracted_data": {
+            "first_name": "J0HN",
+            "last_name": "SM1TH",
+            "document_number": "T80123456",
+            "dob": "1985-02-15",
+            "expiry_date": "2025-01-01",
+            "nationality": "UKN"
+        }
+    },
+    "d8b87057-6188-42a8-a496-787b44c5aa10": {
+        "application_id": "d8b87057-6188-42a8-a496-787b44c5aa10",
+        "status": "REJECTED_REJECTED_MISMATCH",
+        "created_at": "2025-11-15T05:54:49.590944Z",
+        "updated_at": "2025-11-15T05:55:11.727177Z",
+        "risk_score": null,
+        "explanations": [
+            "All documents processed. Please proceed to liveness check.",
+            "Selfie does not match the photo on the ID document."
+        ],
+        "documents": {
+            "id_document": {
+                "file_path": "uploads/d8b87057-6188-42a8-a496-787b44c5aa10/passport_front.jpg",
+                "uploaded_at": "2025-11-15T05:54:59.580168Z",
+                "status": "PROCESSED",
+                "document_type": "PASSPORT",
+                "forensics": {
+                    "status": "CLEAR",
+                    "confidence_score": 0.9724,
+                    "checks_passed": [
+                        "hologram_check",
+                        "font_analysis",
+                        "template_match"
+                    ]
+                },
+                "extracted_data": {
+                    "first_name": "JANE",
+                    "last_name": "DOE",
+                    "document_number": "P01234567",
+                    "dob": "1990-01-01",
+                    "expiry_date": "2030-11-14",
+                    "nationality": "USA"
+                },
+                "model_info": {
+                    "ocr_model": "mock-trocr-transformer-v1.2",
+                    "forensics_model": "mock-cnn-tamper-v2.1",
+                    "processing_time_sec": 3.21
+                }
+            },
+            "address_proof": {
+                "file_path": "uploads/d8b87057-6188-42a8-a496-787b44c5aa10/CTBC QR.png",
+                "uploaded_at": "2025-11-15T05:55:05.634948Z",
+                "status": "PROCESSED",
+                "document_type": "UTILITY_BILL",
+                "forensics": {
+                    "status": "CLEAR",
+                    "confidence_score": 0.976,
+                    "checks_passed": [
+                        "logo_match",
+                        "address_database_crosscheck",
+                        "date_check"
+                    ]
+                },
+                "extracted_data": {
+                    "name": "JANE DOE",
+                    "address": "123 MAIN ST, ANYTOWN, USA 12345",
+                    "issue_date": "2025-10-16",
+                    "provider": "City Electric & Gas"
+                },
+                "model_info": {
+                    "ocr_model": "mock-trocr-transformer-v1.2",
+                    "forensics_model": "mock-cnn-tamper-v2.1",
+                    "processing_time_sec": 2.0
+                }
+            }
+        },
+        "selfie": {
+            "file_path": "uploads/d8b87057-6188-42a8-a496-787b44c5aa10/Kaman Junction.jpg",
+            "uploaded_at": "2025-11-15T05:55:11.727150Z",
+            "status": "REJECTED_MISMATCH",
+            "ai_analysis": {
+                "status": "REJECTED_MISMATCH",
+                "reason": "Selfie does not match the photo on the ID document.",
+                "liveness_check": {
+                    "status": "REAL",
+                    "confidence": 0.975
+                },
+                "face_match": {
+                    "status": "MISMATCH",
+                    "match_score": 0.402,
+                    "id_document_face_ref": "doc_d8b87057-6188-42a8-a496-787b44c5aa10_face.jpg",
+                    "selfie_face_ref": "selfie_d8b87057-6188-42a8-a496-787b44c5aa10_face.jpg"
+                },
+                "model_info": {
+                    "face_match_model": "mock-cnn-facenet-v3.0",
+                    "liveness_model": "mock-antispoof-v1.8",
+                    "processing_time_sec": 1.93
+                }
+            }
+        },
+        "extracted_data": {
+            "first_name": "JANE",
+            "last_name": "DOE",
+            "document_number": "P01234567",
+            "dob": "1990-01-01",
+            "expiry_date": "2030-11-14",
+            "nationality": "USA",
+            "name": "JANE DOE",
+            "address": "123 MAIN ST, ANYTOWN, USA 12345",
+            "address_issue_date": "2025-10-16",
+            "address_provider": "City Electric & Gas"
+        }
+    },
+    "d15f850a-286f-4f31-96c3-1832212ac508": {
+        "application_id": "d15f850a-286f-4f31-96c3-1832212ac508",
+        "status": "REJECTED_REJECTED_MISMATCH",
+        "created_at": "2025-11-17T13:11:28.959015Z",
+        "updated_at": "2025-11-17T13:21:01.716941Z",
+        "risk_score": null,
+        "explanations": [
+            "All documents processed. Please proceed to liveness check.",
+            "Selfie does not match the photo on the ID document."
+        ],
+        "documents": {
+            "id_document": {
+                "file_path": "uploads/d15f850a-286f-4f31-96c3-1832212ac508/IMG_5700.jpeg",
+                "uploaded_at": "2025-11-17T13:18:35.696897Z",
+                "status": "PROCESSED",
+                "document_type": "PASSPORT",
+                "forensics": {
+                    "status": "CLEAR",
+                    "confidence_score": 0.9677,
+                    "checks_passed": [
+                        "hologram_check",
+                        "font_analysis",
+                        "template_match"
+                    ]
+                },
+                "extracted_data": {
+                    "first_name": "JANE",
+                    "last_name": "DOE",
+                    "document_number": "P01234567",
+                    "dob": "1990-01-01",
+                    "expiry_date": "2030-11-16",
+                    "nationality": "USA"
+                },
+                "model_info": {
+                    "ocr_model": "mock-trocr-transformer-v1.2",
+                    "forensics_model": "mock-cnn-tamper-v2.1",
+                    "processing_time_sec": 1.88
+                }
+            },
+            "address_proof": {
+                "file_path": "uploads/d15f850a-286f-4f31-96c3-1832212ac508/IMG_5701.jpeg",
+                "uploaded_at": "2025-11-17T13:20:14.133674Z",
+                "status": "PROCESSED",
+                "document_type": "UTILITY_BILL",
+                "forensics": {
+                    "status": "CLEAR",
+                    "confidence_score": 0.9208,
+                    "checks_passed": [
+                        "logo_match",
+                        "address_database_crosscheck",
+                        "date_check"
+                    ]
+                },
+                "extracted_data": {
+                    "name": "JANE DOE",
+                    "address": "123 MAIN ST, ANYTOWN, USA 12345",
+                    "issue_date": "2025-10-18",
+                    "provider": "City Electric & Gas"
+                },
+                "model_info": {
+                    "ocr_model": "mock-trocr-transformer-v1.2",
+                    "forensics_model": "mock-cnn-tamper-v2.1",
+                    "processing_time_sec": 2.79
+                }
+            }
+        },
+        "selfie": {
+            "file_path": "uploads/d15f850a-286f-4f31-96c3-1832212ac508/IMG_5704.jpeg",
+            "uploaded_at": "2025-11-17T13:21:01.716905Z",
+            "status": "REJECTED_MISMATCH",
+            "ai_analysis": {
+                "status": "REJECTED_MISMATCH",
+                "reason": "Selfie does not match the photo on the ID document.",
+                "liveness_check": {
+                    "status": "REAL",
+                    "confidence": 0.9792
+                },
+                "face_match": {
+                    "status": "MISMATCH",
+                    "match_score": 0.3836,
+                    "id_document_face_ref": "doc_d15f850a-286f-4f31-96c3-1832212ac508_face.jpg",
+                    "selfie_face_ref": "selfie_d15f850a-286f-4f31-96c3-1832212ac508_face.jpg"
+                },
+                "model_info": {
+                    "face_match_model": "mock-cnn-facenet-v3.0",
+                    "liveness_model": "mock-antispoof-v1.8",
+                    "processing_time_sec": 2.16
+                }
+            }
+        },
+        "extracted_data": {
+            "first_name": "JANE",
+            "last_name": "DOE",
+            "document_number": "P01234567",
+            "dob": "1990-01-01",
+            "expiry_date": "2030-11-16",
+            "nationality": "USA",
+            "name": "JANE DOE",
+            "address": "123 MAIN ST, ANYTOWN, USA 12345",
+            "address_issue_date": "2025-10-18",
+            "address_provider": "City Electric & Gas"
+        }
+    }
+}
